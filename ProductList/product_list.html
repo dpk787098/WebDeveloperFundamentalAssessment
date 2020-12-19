@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../login.css">
+        <link rel="stylesheet" href="./product_list.css">
+        <title>Kafene</title>
+        <script src="https://code.jquery.com/jquery-3.5.1.js"
+            integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+            crossorigin="anonymous"></script>
+        <script src="./product_list.js"></script>
+    </head>
+    <body>
+        <header class="top_bar">
+            <div class="left_menu">
+                <a class="logo_wrapper">
+                    <img src="../assets/images/logo.png" />
+                    <p>Kafene</p>
+                </a>
+                <nav class="nav_bar">
+                    <a href="../OrderList/orders_list.html">Orders</a>
+                    <a href="#">Products</a>
+                    <a href="../UserList/user_list.html">Users</a>
+                </nav>
+            </div>
+            <div id="logout" class="right_menu">
+                Logout
+            </div>
+        </header>
+        <div id="overlay">
+            <img src="../assets/images/preloader.gif" alt="Preloader icon" />
+        </div>
+        <main>
+            <div class="order_page_wrapper">
+                <h1>Products</h1>
+                <div class="order_wrapper">
+                    <div class="order_filter_wrapper">
+                        <h3>Filters</h3>
+                        <div class="filter_items">
+                            <p id="prd_count">Count: NA</p>
+                            <label>
+                                <input type="checkbox" class="product" name="product" value="Expired" checked>Expired
+                            </label>
+                            <label>
+                                <input type="checkbox" class="product" name="product" value="Low Stock" checked>Low Stock
+                            </label>
+                        </div>
+                    </div>
+                    <div class="order_table_wrapper">
+                        <table>
+                            <tr>
+                                <th>ID</th>
+                                <th>Product Name</th>
+                                <th>Product Brand</th>
+                                <th>Expiry Date</th>
+                                <th>Unit Price</th>
+                                <th>Stock</th>
+                            </tr>
+                            <tbody id="prod_table_body">
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </body>
+</html>

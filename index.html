@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./login.css">
+        <title>Kafene</title>
+        <script src="https://code.jquery.com/jquery-3.5.1.js"
+            integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+            crossorigin="anonymous"></script>
+        <script src="./login.js"></script>
+    </head>
+    <body>
+        <header class="top_bar">
+            <div class="left_menu">
+                <a class="logo_wrapper">
+                    <img src="./assets/images/logo.png" />
+                    <p>Kafene</p>
+                </a>
+                <nav class="nav_bar">
+                    <a>Orders</a>
+                    <a>Products</a>
+                    <a>Users</a>
+                </nav>
+            </div>
+            <div class="right_menu">
+                Logout
+            </div>
+        </header>
+        <div id="overlay">
+            <img src="./assets/images/preloader.gif" alt="Preloader icon" />
+        </div>
+        <main>
+            <form id="login-form" class="login_form">
+                <h1>Sign In</h1>
+                <input required class="login_input" type="text" name="username" placeholder="Enter Username">
+                <input required class="login_input" type="password" name="password" placeholder="Enter Password">
+                <input class="login_btn" type="submit" name="Login" id="login-btn" value="Login">
+            </form>
+        </main>
+    </body>
+</html>

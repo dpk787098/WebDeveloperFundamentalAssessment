@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../login.css">
+        <link rel="stylesheet" href="./user_list.css">
+        <title>Kafene</title>
+        <script src="https://code.jquery.com/jquery-3.5.1.js"
+            integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+            crossorigin="anonymous"></script>
+        <script src="./user_list.js"></script>
+    </head>
+    <body>
+        <header class="top_bar">
+            <div class="left_menu">
+                <a class="logo_wrapper">
+                    <img src="../assets/images/logo.png" />
+                    <p>Kafene</p>
+                </a>
+                <nav class="nav_bar">
+                    <a href="../OrderList/orders_list.html">Orders</a>
+                    <a href="../ProductList/product_list.html">Products</a>
+                    <a href="#">Users</a>
+                </nav>
+            </div>
+            <div id="logout" class="right_menu">
+                Logout
+            </div>
+        </header>
+        <div id="overlay">
+            <img src="../assets/images/preloader.gif" alt="Preloader icon" />
+        </div>
+        <main>
+            <div class="order_page_wrapper">
+                <h1>Users</h1>
+                <div class="users_wrapper">
+                    <form id="search_form" class="user_search_form">
+                        <input id="search_input" type="search" placeholder="Search by Name">
+                        <input id="search_form_reset" type="reset" value="Reset">
+                    </form>
+                    <div class="order_table_wrapper">
+                        <table>
+                            <tr>
+                                <th>ID</th>
+                                <th>User Avatar</th>
+                                <th>Full Name</th>
+                                <th>DoB</th>
+                                <th>Gender</th>
+                                <th>Current Location</th>
+                            </tr>
+                            <tbody id="user_table_body">
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </body>
+</html>
