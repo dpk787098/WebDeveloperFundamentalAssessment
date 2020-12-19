@@ -20,7 +20,7 @@ $(document).ready(function(){
         if(userData.username !== userData.password) {
             alert('Please Enter Valid Credentials' + " " + userData.username + " " + userData.password)
         } else {
-            $.post('https://5fc1a1c9cb4d020016fe6b07.mockapi.io/api/v1/login', {username: userData.username, password: userData.password})
+            $.post('https://5ee248e08b27f300160948a4.mockapi.io/video/login', {username: userData.username, password: userData.password})
             .done(function() {
                 localStorage.setItem("loginData", JSON.stringify(userData))
                 location.replace("./OrderList/orders_list.html");
