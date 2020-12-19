@@ -23,14 +23,14 @@ $(document).ready(function(){
             $.post('https://5fc1a1c9cb4d020016fe6b07.mockapi.io/api/v1/login', {username: userData.username, password: userData.password})
             .done(function() {
                 localStorage.setItem("loginData", JSON.stringify(userData))
-                // location.replace("./OrderList/orders_list.html");
-                // alert( "Login Success" );
+                location.replace("./OrderList/orders_list.html");
+                alert( "Login Success" );
             })
             .fail(function(e) {
-                location.replace("./OrderList/orders_list.html");
-                localStorage.setItem("loginData", JSON.stringify(userData))
-                alert( "Login Success" );
-                // alert("Login Failed");
+                // location.replace("./OrderList/orders_list.html");
+                // localStorage.setItem("loginData", JSON.stringify(userData))
+                // alert( "Login Success" );
+                alert("Login Failed");
               })
         }
     })
